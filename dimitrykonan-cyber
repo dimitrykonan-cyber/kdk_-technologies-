@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>KDK TECHNOLOGIES - Softwares & Hardwares</title>
+<style>
+body{font-family:Arial;margin:0;background:#0B0B0F;color:#fff;text-align:center}
+header{padding:30px 15px;background:linear-gradient(135deg,#FF6B00,#16A34A)}
+header h1{font-size:32px;margin:0} header p{margin:5px}
+.box{background:#fff;color:#111;margin:15px;border-radius:15px;padding:20px;text-align:left}
+.box h2{margin-top:0}
+.btn{display:block;background:#16A34A;color:#fff;text-align:center;padding:15px;border-radius:12px;text-decoration:none;font-weight:bold;margin-top:10px}
+.btn.orange{background:#FF6B00} .btn.black{background:#111}
+.badge{display:inline-block;background:#FF6B00;color:#fff;padding:5px 10px;border-radius:20px;font-size:12px}
+</style></head><body>
+
+<header>
+<h1>👑 KDK TECHNOLOGIES</h1>
+<p><b>Softwares - Hardwares</b></p>
+<p>Bocanda • Abidjan • Côte d'Ivoire</p>
+<p><span class="badge">🟠 OFFLINE + 🟢 ONLINE = OFFON</span></p>
+</header>
+
+<div class="box">
+<h2>💻 SOFTWARES - Nos Applis</h2>
+<p>On crée des applis qui marchent même sans internet.</p>
+<p>✅ <b>KDK EDU</b> - École CP1 à Terminale - Notes, Moyennes, Forum<br>
+✅ <b>KDK FASHION</b> - Boutique vêtements - Commande WhatsApp<br>
+✅ <b>KDK NATUR</b> - Produits naturels - Tisane, Sirop, Pommade<br>
+✅ <b>KDK PAY</b> - Paiement Wave, Orange Money, MoMo, Cash<br>
+✅ <b>KDK ADMIN</b> - Gère tes élèves, tes ventes, tes stocks</p>
+<a class="btn" href="https://ton-nom.github.io/kdk-edu/">VOIR KDK EDU →</a>
+<a class="btn orange" href="https://ton-nom.github.io/kdk-fashion/">VOIR KDK FASHION →</a>
+</div>
+
+<div class="box">
+<h2>🖥️ HARDWARES - Notre Matériel</h2>
+<p>On vend du matériel fiable, avec garantie.</p>
+<p>📱 Téléphones & Tablettes<br>
+💻 Ordinateurs & Accessoires<br>
+☀️ Panneaux Solaires & Batteries<br>
+📷 Caméras & Sécurité<br>
+🎧 Écouteurs, Chargeurs, Coques</p>
+<a class="btn black" href="https://wa.me/2250700000000?text=Bonjour%20KDK%20TECHNOLOGIES%2C%20je%20veux%20voir%20le%20mat%C3%A9riel%20disponible">DEMANDER LE CATALOGUE HARDWARE SUR WHATSAPP →</a>
+</div>
+
+<div class="box">
+<h2>📦 COMMANDE EN 1 CLIC</h2>
+<p>Tu veux un produit ? Dis-nous :</p>
+<input id="nom" placeholder="Ton Nom" style="width:100%;padding:12px;margin:5px 0;border-radius:10px;border:1px solid #ddd">
+<input id="besoin" placeholder="Ex: Tablette pour mon enfant / Panneau solaire" style="width:100%;padding:12px;margin:5px 0;border-radius:10px;border:1px solid #ddd">
+<a class="btn" href="#" onclick="cmd();return false;">COMMANDER SUR WHATSAPP</a>
+</div>
+
+<p style="padding:0 15px 30px;font-size:13px;color:#aaa">KDK TECHNOLOGIES • BOCANDA TECH HUB • ABIDJAN<br>OFFON - Ça marche partout.</p>
+
+<script>
+function cmd(){
+let n=document.getElementById('nom').value;
+let b=document.getElementById('besoin').value;
+if(!n||!b){alert('Mets ton nom + ce que tu veux');return;}
+window.open('https://wa.me/2250700000000?text='+encodeURIComponent('Bonjour KDK TECHNOLOGIES, je suis '+n+'. Je veux : '+b), '_blank');
+}
+</script>
+</body></html>
